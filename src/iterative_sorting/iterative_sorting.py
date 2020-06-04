@@ -26,12 +26,11 @@ def selection_sort(arr):
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
     for i in range(0, len(arr) - 1):
-        current = i
-        for j in range(current + 1, len(arr)):
-            smallest = j
-            if arr[smallest] > arr[smallest + 1]:
+        for j in range(i + 1, len(arr)-1):
+            if arr[j] > arr[j+1]:
                 temp = arr[j]
-                arr[smallest], arr[smallest + 1] = arr[smallest + 1], temp
+                arr[j] = arr[j + 1]
+                arr[j + 1] = temp
     return arr
 
 '''
