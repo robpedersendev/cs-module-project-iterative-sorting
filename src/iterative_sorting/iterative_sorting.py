@@ -30,9 +30,10 @@ def bubble_sort(arr):
     # Tells second loop where to start at, runs for each value in the list
     for i in init:
         # Starts at 0
-        #
         for j in init:
+            # Compare values
             if arr[j] > arr[j+1]:
+                # Perform the swap
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
 
