@@ -27,9 +27,11 @@ def selection_sort(arr):
 def bubble_sort(arr):
     for i in range(0, len(arr) - 1):
         current = i
-        for j in range(current + 1, len(arr)):
-            if arr[current] > arr[current + 1]:
-                arr[current], arr[current + 1] = arr[current + 1], arr[current]
+        for j in range(current + 1, len(arr)-1):
+            smallest = j
+            if arr[smallest] > arr[smallest + 1]:
+                temp = arr[j]
+                arr[smallest], arr[smallest + 1] = arr[smallest + 1], temp
     return arr
 
 '''
