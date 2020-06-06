@@ -25,13 +25,13 @@ def binary_search(arr, target):
         middle = low + (high - low)  # 2
         mid = arr[middle]
 
-    # ask if the middle is less than or greater than our target
-    # if less, eliminate the right-hand side
-    if target == mid:
-        return middle
-    elif target > mid:
-        low = middle + 1
-    else:
-        high = middle - 1
-    # adjust the low or high accordingly
+        # ask if the middle is less than or greater than our target
+        # if less, eliminate the right-hand side
+        if target == mid:
+            return middle
+        elif target > mid:
+            low = middle + 1
+        else:
+            high = middle - 1
+        # adjust the low or high accordingly
     return -1  # not found
